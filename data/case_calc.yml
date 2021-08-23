@@ -17,7 +17,7 @@ add:
       - a+a=aa
       - a+$=a$
   err:
-    - ['a', 1, True]
+    - ['a', 1, 'a1']
 div:
   int:
     datas:

@@ -33,6 +33,11 @@ def div_get_datas_by_fixture(request):
 def test_getdatas():
     logging.info(get_datas())
 
+@allure.feature("插入图片")
+def test_img():
+    allure.attach.file("./data/1.png", name="这是一张图片", attachment_type=allure.attachment_type.PNG)
+    logging.info("插入一张图片")
+
 @allure.feature("计算器模块")
 class TestCalc:
     @allure.story("加法功能")

@@ -9,4 +9,5 @@
 import pytest
 
 if __name__ == "__main__":
-    pytest.main(["-vs", "--alluredir", "./temp"])
+    pytest.main(["-vs", "--alluredir", "./temp", "--clean-alluredir"])
+    # allure generate ./temp -o ./report --clean
